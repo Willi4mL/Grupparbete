@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height:100vh;
+}
+
+header, footer{
+	background-color: #fefae0;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 100vw;
+    justify-content: space-around;
+    padding-inline-start: 0;
+	background-color: #cbc8b3;
+}
+
+main {
+    display: flex;
+}
+
+main .inner-module {
+    background-color: #ffffff;
+    flex: 1;
+}
+
+aside {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    main .inner-module {
+        min-width: 900px;
+    }
+
+    aside {
+        display: block;
+		background-color: #e6e6e6;
+        flex: 1;
+    }
+}
