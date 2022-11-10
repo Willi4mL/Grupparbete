@@ -1,24 +1,24 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-	height:100vh;
+body {
+    height: 100vh;
 }
 
-header, footer{
-	background-color: #fefae0;
+header,
+footer {
+    background-color: #fefae0;
 }
 
 header nav ul {
     display: flex;
     list-style-type: none;
-    width: 100vw;
     justify-content: space-around;
     padding-inline-start: 0;
-	background-color: #cbc8b3;
+    background-color: #cbc8b3;
     width: 100%;
 }
 
@@ -42,7 +42,7 @@ aside {
 
     aside {
         display: block;
-		background-color: #e6e6e6;
+        background-color: #e6e6e6;
         flex: 1;
     }
 }
