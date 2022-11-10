@@ -15,7 +15,6 @@ header, footer{
 header nav ul {
     display: flex;
     list-style-type: none;
-    width: 100vw;
     justify-content: space-around;
     padding-inline-start: 0;
 	background-color: #cbc8b3;
