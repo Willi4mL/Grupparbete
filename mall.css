@@ -18,8 +18,9 @@ header{
     top:0;
 }
 
-header, footer{
-	background-color: #fefae0;
+header,
+footer {
+    background-color: #fefae0;
 }
 
 /* Header-2 under main Header */
@@ -133,7 +134,7 @@ aside {
 
     aside {
         display: block;
-		background-color: #e6e6e6;
+        background-color: #e6e6e6;
         flex: 1;
     }
     .phone-menu {
