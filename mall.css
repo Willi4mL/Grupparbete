@@ -1,4 +1,3 @@
-/*  main inner module måste börja unde naven, kan inte använda margin */
 *{
 	margin: 0;
 	padding: 0;
@@ -18,8 +17,7 @@ header{
     top:0;
 }
 
-header,
-footer {
+header, footer {
     background-color: #fefae0;
 }
 
@@ -59,23 +57,31 @@ li:hover{
     cursor: pointer;
 }
 
+/* main content (med asides) */
 main {
-    /* height: calc(100vh - 12em); */
 display: flex;
+position:relative;
+top:7em;
+margin-bottom: 5em;
+z-index: -1;
 }
 
+/* höjd på main och aside */
+.inner-module {
+    height: calc(100vh - 11.3em);
+}
+
+/* Main content (utan asides) */
 main .inner-module {
     background-color: #ffffff;
     flex: 1;
-    
-    /* margin-bottom: 5em; */
+    padding-top:3em;
     text-align: center;
-    height: 90vh;
     padding-left: 3em;
     padding-right: 3em;
 }
 
-
+/* phone-menu hamburgermeny*/
 .phone-menu {
     display: inline;
     max-width: 25px;
@@ -88,11 +94,7 @@ main .inner-module {
     cursor: pointer;
 }
 
-.phone-menu:focus{
-    padding:1em;
-    background-color:plum;
-}
-
+/* Kundkorgen i header */
 .cart{
     height: 1.5em;
     width: 1.5em;
@@ -103,13 +105,7 @@ main .inner-module {
     cursor: pointer;
 }
 
-.cart:focus{
-    width: auto;
-    margin-right: 1.5em;
-    padding:1em;
-    background-color:plum;
-}
-
+/* Företags namn & logga i header */
 .logo {
     display: inline;
     width: 20em;
@@ -119,9 +115,8 @@ main .inner-module {
 }
 aside {
     display: none;
-    height: 90vh;
 }
-/* varför beter sig min width olika på olika enheter? på mac försvann sidscroll vid 768 px på båda men windows behövde sätta 750 på ena. se nedan. */
+
 @media screen and (min-width: 768px) {
     main .inner-module {
         min-width: 750px;
@@ -156,6 +151,8 @@ footer {
     padding-inline-start: 0;
     align-items: center;
     min-height: 5em;
+    position: relative;
+    bottom: 0;
 }
 footer > ul {
     list-style: none;
@@ -185,7 +182,7 @@ padding: 0;
     padding-bottom: 0.5em;
 }
 
-/*Mitt exempel på meny*/
+/*DropdownMeny*/
 input{
     display: none;
 }
