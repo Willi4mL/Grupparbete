@@ -12,10 +12,12 @@
 
 .order-sum {
 	display: flex;
-	border: 1px solid black;
 	width: 100%;
 }
 
+.order-sum>div {
+	flex-grow: 1;
+}
 
 #order-cont {
 	border: 1px solid rgba(0, 0, 0, 0.128);
