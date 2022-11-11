@@ -1,42 +1,26 @@
+*{
+	box-sizing: border-box;
+}
 
-  .pic-ctn {
-	width: 100vw;
-	height: 200px;
-  }
-  
-  @keyframes display {
-	0% {
-	  transform: translateX(200px);
-	  opacity: 0;
-	}
-	10% {
-	  transform: translateX(0);
-	  opacity: 1;
-	}
-	20% {
-	  transform: translateX(0);
-	  opacity: 1;
-	}
-	30% {
-	  transform: translateX(-200px);
-	  opacity: 0;
-	}
-	100% {
-	  transform: translateX(-200px);
-	  opacity: 0;
-	}
-  }
-  
-  .pic-ctn {
+.box{
+	height:25em;
+	width: 20em;
+}
+
+/* Bilder som ändras */
+  .pic-container {
 	position: relative;
-	width: 100vw;
-	height: 300px;
-	margin-top: 15vh;
+	max-width: 10em;
+	max-height: 10em;	
+	display: flex;
+	
   }
   
-  .pic-ctn > img {
+  .pic-container > img {
 	position: absolute;
-	top: 0;
+	width: 30em;
+	height: 25em;
+	justify-content: center;
 	left: calc(50% - 100px);
 	opacity: 0;
 	animation: display 10s infinite;
@@ -54,3 +38,27 @@
   img:nth-child(5) {
 	animation-delay: 8s;
   }
+
+/*Flyter in och ut*/
+	@keyframes display {
+	0% {
+		/* transform: translateX(200px); */
+		opacity: 0;
+	}
+	10% {
+		/* transform: translateX(0); */
+		opacity: 1;
+	}
+	20% {
+		/* transform: translateX(0); */
+		opacity: 1;
+	}
+	30% {
+		/* transform: translateX(-200px); */
+		opacity: 0;
+	}
+	100% {
+		/* transform: translateX(-200px); */
+		opacity: 0;
+	}
+	}
