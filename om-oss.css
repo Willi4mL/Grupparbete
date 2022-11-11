@@ -1,0 +1,36 @@
+.portrait{
+	width: 30%;
+	height: 30%;
+	border-style: dashed;
+	border-color: blueviolet;
+}
+
+.bold{
+	font-family: 'league spartan', sans-serif;
+	font-kerning: normal;
+}
+
+.inner-module{
+		display: flex;
+		flex-direction: row;
+		flex-flow: row wrap;
+}
+
+/* display: flex;
+flex-direction: row;
+flex-flow: row wrap;
+justify-content: space-around;
+padding-inline-start: 0;
+align-items: center;
+min-height: 5em;
+position: relative;
+bottom: 0;
+z-index: -1; */
+
+section>ul {
+	/* list-style: none; */
+	padding: 1.5em;
+	display: flex;
+		flex-direction: row;
+		flex-flow: row wrap;
+}

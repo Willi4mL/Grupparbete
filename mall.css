@@ -69,6 +69,7 @@ z-index: -1;
 /* höjd på main och aside */
 .inner-module {
 min-height: calc(100vh - 11.3em);
+height: fit-content;
 }
 
 /* Main content (utan asides) */
@@ -154,6 +155,7 @@ footer {
     min-height: 5em;
     position: relative;
     bottom: 0;
+    z-index: -1;
 }
 footer > ul {
     list-style: none;
