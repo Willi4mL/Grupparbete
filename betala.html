@@ -52,13 +52,15 @@
 
 			<div class="h2-cont">
 				<h2>Orderöversikt</h2>
-				<h2>Fortsätt handla</h2>
+				<h2><a target="_self" href="produkt.html">Fortsätt handla</a></h2>
 			</div>
 			<section id="order-cont">
-				<!-- Bild här -->
-				<img class="order-img" src="/bilder/Produkt/pilo_no1_black_packshot_01_new_w1300.jpg"
-					alt="fabric_shaver_black">
-				<!-- Bild här -->
+				<div class="card-cont">
+					<img class="order-img" src="/bilder/Produkt/pilo_no1_black_packshot_01_new_w1300.jpg"
+						alt="fabric_shaver_black">
+					<p>Noppborttagare - svart</p>
+				</div>
+
 				<hr />
 
 				<div class="order-sum">
@@ -79,32 +81,34 @@
 				<h2>Leverans</h2>
 			</div>
 			<section id="leverans-cont">
-				<div class="leverans-item">Budbee paketbox</div>
+				<div class="leverans-item"> <input type="radio">Budbee paketbox</div>
 				<p>leverans 2-3 arbetsdagar</p>
 				<hr />
-				<div class="leverans-item">Instabox skåp</div>
+				<div class="leverans-item"> <input type="radio">Instabox skåp</div>
 				<p>leverans 2 arbetsdagar</p>
 				<hr />
-				<div class="leverans-item">Postnord hemleverans</div>
+				<div class="leverans-item"> <input type="radio"> Postnord hemleverans</div>
 				<p>leverans 4 arbetsdagar</p>
 				<hr />
-				<div class="leverans-item">DHL ombud</div>
+				<div class="leverans-item"> <input type="radio">DHL ombud</div>
 				<p>leverans 3-5 arbetsdagar</p>
 
 
 			</section>
 
 
-
-			<!-- De här syns inte på sidan -->
+			<div class="h2-cont">
+				<h2>Dina uppgifter</h2>
+			</div>
 			<section id="info-cont">
-				<form action="">
-					<label for="personnummer"></label>
-					<input type="text" id="personnummer">
-					<input type="text">
-					<input type="text">
-					<input type="text">
-				</form>
+				<div><input placeholder="Personnummer" type="text"></div>
+				<div><input placeholder="Mobilnummer" type="text"></div>
+				<div><input placeholder="Mejladress" type="text"></div>
+				<div><input placeholder="Förnamn" type="text"></div>
+				<div><input placeholder="Efternamn" type="text"></div>
+				<div><input placeholder="Adress" type="text"></div>
+				<div><input placeholder="Ort" type="text"></div>
+				<div><input class="postnummer" placeholder="Postnummer" type=" text"></div>
 
 			</section>
 
@@ -113,13 +117,13 @@
 				<h2>Betalsätt</h2>
 			</div>
 			<section id="payment-cont">
-				<div class="payment-item">Klarna</div>
+				<div>Klarna</div>
 				<p>delbetala eller betala direkt</p>
 				<hr />
-				<div class="payment-item">Betala med kort</div>
+				<div>Betala med kort</div>
 				<p>fyll i din kortuppgifter</p>
 				<hr />
-				<div class="payment-item">Swish</div>
+				<div>Swish</div>
 				<p>fyll i ditt telefonnummer</p>
 
 			</section>

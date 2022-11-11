@@ -142,7 +142,7 @@ aside {
 		display: none;
 	}
 
-	input:checked~.meny {
+	input[type="checkbox"]:checked~.meny {
 		visibility: hidden;
 	}
 
@@ -193,7 +193,7 @@ footer>ul>li>a>img {
 }
 
 /*DropdownMeny*/
-input {
+input[type="checkbox"] {
 	display: none;
 }
 
