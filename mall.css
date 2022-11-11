@@ -18,9 +18,11 @@ header {
     top: 0;
 }
 
-header,
-footer {
-    background-color: #fefae0;
+header {
+    height: 5em;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 /* Header-2 under main Header */
