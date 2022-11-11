@@ -1,8 +1,69 @@
-button {
-	background-color: black;
-	color: white;
-	padding: 0.6em 6em;
-	margin-top: 5em;
+.h2-cont {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 0.3em;
+	padding-top: 5em;
+	font-size: 0.7em;
+}
+
+.order-img {
+	width: 8em;
+}
+
+.order-sum {
+	display: flex;
+	border: 1px solid black;
+	width: 100%;
+}
+
+
+#order-cont {
+	border: 1px solid rgba(0, 0, 0, 0.128);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-radius: 4px;
+	margin-bottom: 10em;
+}
+
+
+#order-cont p {
+	padding: 1em;
+}
+
+#leverans-cont {
+	border: 1px solid rgba(0, 0, 0, 0.128);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-radius: 4px;
+	margin-bottom: 10em;
+}
+
+#leverans-cont p:nth-of-type(1) {
+	padding-bottom: 1.5em;
+
+}
+
+#leverans-cont p:nth-of-type(2) {
+	padding-bottom: 1.5em;
+
+}
+
+#leverans-cont p:nth-of-type(3) {
+	padding-bottom: 1.5em;
+
+}
+
+#leverans-cont p:nth-of-type(4) {
+	padding-bottom: 1.5em;
+
+}
+
+.leverans-item {
+	padding: 1em 1em;
+	padding-bottom: 0;
+
 }
 
 #payment-cont {
@@ -18,9 +79,11 @@ button {
 	padding-bottom: 0;
 }
 
-p {
-	padding-left: 1em;
+#leverans-cont p,
+#payment-cont p {
+	padding-left: 1.2em;
 	opacity: 0.5;
+	font-size: 0.8rem;
 }
 
 #payment-cont p:nth-of-type(1) {
@@ -36,6 +99,17 @@ p {
 }
 
 
+button {
+	background-color: black;
+	color: white;
+	padding: 0.6em 6em;
+	margin-top: 5em;
+}
+
+.hr1 {
+	border: 0.3px dashed rgba(0, 0, 0, 0.128);
+}
+
 hr {
 	border: 0.3px solid rgba(0, 0, 0, 0.128);
 	width: 95%;
@@ -45,6 +119,9 @@ hr {
 }
 
 
+
+
+/* INFROMATIONS GRID */
 
 /* #info-cont {
 	display: grid;

@@ -70,6 +70,7 @@ main {
 /* höjd på main och aside */
 .inner-module {
 	min-height: calc(100vh - 11.3em);
+	height: fit-content;
 }
 
 /* Main content (utan asides) */
