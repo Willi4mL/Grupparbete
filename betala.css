@@ -35,9 +35,10 @@
 	grid-column: 3;
 	grid-row: 1;
 	align-self: center;
-	justify-self: flex-end;
+	justify-self: end;
 	padding-right: 1.5em;
 }
+
 
 .card-cont p:nth-of-type(1) {
 	text-align: start;
@@ -123,6 +124,10 @@ input[type="radio"] {
 	margin-right: 1em;
 }
 
+input[type="radio"]:hover {
+	cursor: pointer;
+}
+
 #payment-cont {
 	border: 1px solid rgba(0, 0, 0, 0.128);
 	border-radius: 4px;
@@ -156,11 +161,15 @@ input[type="radio"] {
 }
 
 
-button {
+.pay-btn {
 	background-color: black;
 	color: white;
 	padding: 0.6em 6em;
 	margin-top: 5em;
+}
+
+.pay-btn:hover {
+	cursor: pointer;
 }
 
 
@@ -195,10 +204,21 @@ input[type="text"] {
 	width: 100%;
 	padding: 1.5em;
 	border: none;
+
 }
 
 
 input[type="text"]:focus {
+	outline: none;
+}
+
+input[type="email"] {
+	width: 100%;
+	padding: 1.5em;
+	border: none;
+}
+
+input[type="email"]:focus {
 	outline: none;
 }
 
