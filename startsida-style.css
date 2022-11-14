@@ -1,0 +1,102 @@
+*{
+	box-sizing: border-box;
+}
+
+article > *{
+	text-align: left;
+}
+
+article.text .rubrik-bold{
+	font-family: 'League Spartan', sans-serif;
+}
+
+.bild-mellan{
+	display: none;
+	width: 100%;
+	height: 25em;
+}
+
+/* Bilder som ändras */
+  .pic-container {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 25em;
+	display: flex;
+	margin-bottom:2em;
+  }
+  
+.pic-container > img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	animation: display 32s infinite;
+	border-radius: 0.2em;
+  }
+  
+  img:nth-child(2) {
+	animation-delay: 8s;
+  }
+  img:nth-child(3) {
+	animation-delay: 16s;
+  }
+  img:nth-child(4) {
+	animation-delay: 24s;
+  }
+  img:nth-child(5) {
+	animation-delay: 32s;
+  }
+
+/*Flyter in och ut*/
+	@keyframes display {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+	}
+
+	/* Liten skärm */
+	@media screen and (max-width: 768px){
+		main > .inner-module > * {
+			display: none;
+		}
+		main > .inner-module > .pic-container{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			top:-2em;
+			display: flex;
+			max-width: 100%;
+			margin-bottom:2em;
+		}
+		main > .inner-module > .pic-container > img{
+			max-width: 100%;
+		}
+		main > .inner-module > .text{
+			display: block;
+			flex-wrap: wrap;
+		}
+		.bild-mellan{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 2em;
+			padding-bottom: 2em;
+			height: 100%;
+		}
+	}

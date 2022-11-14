@@ -68,7 +68,8 @@ z-index: -1;
 
 /* höjd på main och aside */
 .inner-module {
-    height: calc(100vh - 11.3em);
+    min-height: calc(100vh - 11.3em);
+    height: fit-content;
 }
 
 /* Main content (utan asides) */
@@ -79,6 +80,7 @@ main .inner-module {
     text-align: center;
     padding-left: 3em;
     padding-right: 3em;
+    margin-bottom: 5em;
 }
 
 /* phone-menu hamburgermeny*/
