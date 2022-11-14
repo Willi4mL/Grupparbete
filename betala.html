@@ -50,19 +50,22 @@
 		<!-- Innehåll -->
 		<section class="inner-module">
 
+			<!-- ORDERÖVERSIKT -->
+
 			<div class="h2-cont">
 				<h2>Orderöversikt</h2>
-				<h2><a target="_self" href="produkt.html">Fortsätt handla</a></h2>
+				<h2>Fortsätt handla</h2>
 			</div>
 			<section id="order-cont">
 				<div class="card-cont">
-					<img class="order-img" src="/bilder/Produkt/pilo_no1_black_packshot_01_new_w1300.jpg"
-						alt="fabric_shaver_black">
-					<p>Noppborttagare - svart</p>
+					<img class="order-img" src="/bilder/Produkt/nopp1.png" alt="fabric_s-haver_black">
+					<p>Pilo 2 - charcoal
+					</p>
+					<p>650:-</p>
+					<p>- 1 +</p>
+					<img class="remove-item" src="/bilder/ikoner/charm_circle-cross.png" alt="remove">
 				</div>
-
 				<hr />
-
 				<div class="order-sum">
 					<p>Frakt:</p>
 					<div></div>
@@ -74,56 +77,96 @@
 					<div></div>
 					<p><strong>699:-</strong></p>
 				</div>
-
-
 			</section>
+
+
+			<!-- LEVERANS -->
+
 			<div class="h2-cont">
 				<h2>Leverans</h2>
 			</div>
 			<section id="leverans-cont">
-				<div class="leverans-item"> <input type="radio">Budbee paketbox</div>
+				<div class="leverans-item"> <input name="leverans" id="budbee" type="radio"><label for="budbee">Budbee
+						paketbox</label>
+					<div class="leverans-icons"></div><img src="/bilder/ikoner/budbeelogogreen 1.png">
+				</div>
 				<p>leverans 2-3 arbetsdagar</p>
 				<hr />
-				<div class="leverans-item"> <input type="radio">Instabox skåp</div>
+				<div class="leverans-item"> <input id="instabox" name="leverans" type="radio"> <label
+						for="instabox">Instabox
+						skåp</label>
+					<div class="leverans-icons"></div><img
+						src="/bilder/ikoner/instabox-logotyp-landskap-600x370@2x 1.png">
+				</div>
 				<p>leverans 2 arbetsdagar</p>
 				<hr />
-				<div class="leverans-item"> <input type="radio"> Postnord hemleverans</div>
+				<div class="leverans-item"> <input id="postnord" name="leverans" type="radio"> <label
+						for="postnord">Postnord hemleverans</label>
+					<div class="leverans-icons"></div><img src="/bilder/ikoner/postnord 1.png">
+				</div>
 				<p>leverans 4 arbetsdagar</p>
 				<hr />
-				<div class="leverans-item"> <input type="radio">DHL ombud</div>
+				<div class="leverans-item"> <input id="dhl" name="leverans" type="radio"><label for="dhl">DHL
+						ombud</label>
+					<div class="leverans-icons"></div><img src="/bilder/ikoner/dhl-1-logo 2.png" alt="">
+				</div>
+
 				<p>leverans 3-5 arbetsdagar</p>
-
-
 			</section>
 
+
+			<!-- DINA UPPGIFTER -->
 
 			<div class="h2-cont">
 				<h2>Dina uppgifter</h2>
 			</div>
 			<section id="info-cont">
-				<div><input placeholder="Personnummer" type="text"></div>
-				<div><input placeholder="Mobilnummer" type="text"></div>
-				<div><input placeholder="Mejladress" type="text"></div>
-				<div><input placeholder="Förnamn" type="text"></div>
-				<div><input placeholder="Efternamn" type="text"></div>
-				<div><input placeholder="Adress" type="text"></div>
+				<div><input placeholder="Personnummer" type="text">
+					<hr />
+				</div>
+
+				<div><input placeholder="Mobilnummer" type="text">
+					<hr />
+				</div>
+				<div><input placeholder="E-postadress" type="text">
+					<hr />
+				</div>
+				<div><input placeholder="Förnamn" type="text">
+					<hr />
+				</div>
+				<div><input placeholder="Efternamn" type="text">
+					<hr />
+				</div>
+				<div><input placeholder="Adress" type="text">
+					<hr />
+				</div>
 				<div><input placeholder="Ort" type="text"></div>
 				<div><input class="postnummer" placeholder="Postnummer" type=" text"></div>
 
 			</section>
 
+			<!-- BETALSÄTT -->
 
 			<div class="h2-cont">
 				<h2>Betalsätt</h2>
 			</div>
 			<section id="payment-cont">
-				<div>Klarna</div>
-				<p>delbetala eller betala direkt</p>
+				<div class="leverans-item"> <input name="betala" id="klarna" type="radio"><label
+						for="klarna">Klarna</label>
+					<div class="leverans-icons"></div><img src="/bilder/ikoner/Klarna 1.png">
+				</div>
+				<p>leverans 2-3 arbetsdagar</p>
 				<hr />
-				<div>Betala med kort</div>
+				<div class="leverans-item"> <input name="betala" id="card" type="radio"><label for="card">Betala med
+						kort</label>
+					<div class="leverans-icons"></div><img class="pay-card" src="/bilder/ikoner/kort.png">
+				</div>
 				<p>fyll i din kortuppgifter</p>
 				<hr />
-				<div>Swish</div>
+				<div class="leverans-item"> <input name="betala" id="swish" type="radio"><label
+						for="swish">Swish</label>
+					<div class="leverans-icons"></div><img src="/bilder/ikoner/swishpng 1.png">
+				</div>
 				<p>fyll i ditt telefonnummer</p>
 
 			</section>
