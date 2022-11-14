@@ -1,0 +1,22 @@
+.produktblad{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+}
+
+.produktblad > img{
+	border:1px solid #bbbbbb;
+	/* background-color: #E8E7E7; */
+	width: 100%;
+	position: relative;
+}
+
+
+@media screen and (min-width: 768px){
+	.produktblad{
+		
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+	}
+}
+	

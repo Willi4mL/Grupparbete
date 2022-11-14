@@ -6,15 +6,15 @@
     font-kerning: normal;
 }
 
-body{
-	height: 100vh;
+body {
+    height: 100vh;
 }
 
-header{
+header {
     height: 5em;
-    position:fixed;
+    position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
 }
 
 header, footer {
@@ -27,14 +27,14 @@ header nav ul {
     list-style-type: none;
     justify-content: space-around;
     padding-inline-start: 0;
-	background-color: #cbc8b3;
+    background-color: #cbc8b3;
     width: 100%;
     padding: 1em;
     height: 2em;
     align-items: center;
 }
 
-.header-section{
+.header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,16 +44,16 @@ nav {
     display: none;
 }
 
-li > a{
+li>a {
     font-family: 'League Spartan', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-li:hover{
+li:hover {
     cursor: pointer;
 }
 
@@ -68,7 +68,8 @@ z-index: -1;
 
 /* höjd på main och aside */
 .inner-module {
-    height: calc(100vh - 11.3em);
+    min-height: calc(100vh - 11.3em);
+    height: fit-content;
 }
 
 /* Main content (utan asides) */
@@ -79,6 +80,7 @@ main .inner-module {
     text-align: center;
     padding-left: 3em;
     padding-right: 3em;
+    margin-bottom: 5em;
 }
 
 /* phone-menu hamburgermeny*/
@@ -90,7 +92,7 @@ main .inner-module {
     margin-left: 1em;
 }
 
-.phone-menu:hover{
+.phone-menu:hover {
     cursor: pointer;
 }
 
@@ -101,7 +103,7 @@ main .inner-module {
     margin-right: 1.5em;
 }
 
-.cart:hover{
+.cart:hover {
     cursor: pointer;
 }
 
@@ -111,8 +113,9 @@ main .inner-module {
     width: 20em;
     height: 5em;
     align-self: center;
-    
+
 }
+
 aside {
     display: none;
 }
@@ -121,28 +124,31 @@ aside {
     main .inner-module {
         min-width: 750px;
     }
+
     nav {
-            display: block;
-            background-color: #e6e6e6;
-            flex: 1;
-        }
+        display: block;
+        background-color: #e6e6e6;
+        flex: 1;
+    }
 
     aside {
         display: block;
         background-color: #e6e6e6;
         flex: 1;
     }
+
     .phone-menu {
-    display: none;
+        display: none;
     }
 
-    input:checked ~ .meny{
+    input:checked~.meny {
         visibility: hidden;
     }
 
 
 
 }
+
 footer {
     display: flex;
     flex-direction: row;
@@ -154,30 +160,33 @@ footer {
     position: relative;
     bottom: 0;
 }
-footer > ul {
+
+footer>ul {
     list-style: none;
     padding: 1.5em;
 }
 
-footer > ul > li{
+footer>ul>li {
     width: 10em;
 }
 
-.bold{
+.bold {
     font-family: 'League Spartan', sans-serif;
 }
 
-footer > ul > li > a >img {
+footer>ul>li>a>img {
     height: 2em;
 }
 
-.footer-img{
-width: 1em;
-padding: 0;
+.footer-img {
+    width: 1em;
+    padding: 0;
 }
+
 .medlem {
     padding-top: 0.5em;
 }
+
 .kundservice {
     padding-bottom: 0.5em;
 }
@@ -186,25 +195,29 @@ padding: 0;
 input{
     display: none;
 }
-header > section.header-section > nav.meny > ul{
+
+header>section.header-section>nav.meny>ul {
     background-color: #ffffff;
     width: 8em;
     height: 10em;
     display: flex;
     flex-direction: column;
 }
-header > section.header-section > nav.meny > ul > li {
+
+header>section.header-section>nav.meny>ul>li {
     position: relative;
     top: 0.5em;
     bottom: 0.5em;
-    
-}
-.meny{    
-    display:none;
-    position:absolute;
-    top:5em;}
 
-input:checked ~ .meny{
-    display:block;
-    box-shadow: 5px 4px 5px rgba(000,000,000, 0.5);
+}
+
+.meny {
+    display: none;
+    position: absolute;
+    top: 5em;
+}
+
+input:checked~.meny {
+    display: block;
+    box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
 }
