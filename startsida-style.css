@@ -2,41 +2,45 @@
 	box-sizing: border-box;
 }
 
-.box{
-	height:25em;
-	width: 20em;
+article > *{
+	text-align: left;
 }
 
+article.text > .rubrik-bold{
+	font-family: 'League Spartan', sans-serif;
+}
 /* Bilder som ändras */
   .pic-container {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 	position: relative;
-	max-width: 10em;
-	max-height: 10em;	
+	width: 30em;
+	height: 25em;
 	display: flex;
-	
+	margin-bottom:2em;
   }
   
-  .pic-container > img {
+.pic-container > img {
 	position: absolute;
 	width: 30em;
 	height: 25em;
-	justify-content: center;
-	left: calc(50% - 100px);
 	opacity: 0;
-	animation: display 10s infinite;
+	animation: display 32s infinite;
+	border-radius: 0.2em;
   }
   
   img:nth-child(2) {
-	animation-delay: 2s;
+	animation-delay: 8s;
   }
   img:nth-child(3) {
-	animation-delay: 4s;
+	animation-delay: 16s;
   }
   img:nth-child(4) {
-	animation-delay: 6s;
+	animation-delay: 24s;
   }
   img:nth-child(5) {
-	animation-delay: 8s;
+	animation-delay: 32s;
   }
 
 /*Flyter in och ut*/
