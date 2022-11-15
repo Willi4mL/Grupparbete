@@ -15,6 +15,7 @@ header {
 	position: fixed;
 	width: 100%;
 	top: 0;
+    z-index: 1;
 }
 
 header,
@@ -220,7 +221,6 @@ header>section.header-section>nav.meny>ul>li {
 	bottom: 0.5em;
 
 }
-<<<<<<< HEAD
 .meny{
     display:none;
     position:absolute;
@@ -243,8 +243,6 @@ input:checked~.meny {
     display: block;
     box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
 }
-=======
->>>>>>> c5234747a39382af94ae08c530bfbcc6f9147989
 
 .meny {
 	display: none;
