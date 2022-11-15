@@ -4,6 +4,7 @@
 	top: 10em;
 	z-index: 1;
 	width: 25em;
+	height: fit-content;
 	background-color: #fff;
 	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
 	padding: 1em;
@@ -12,8 +13,12 @@
 .flex-cont {
 	display: flex;
 	flex-direction: column;
+	padding: 0.5em;
+
 }
 
 .add-item {
 	padding: 0.4em 1.5em;
+	width: 30%;
+	align-self: flex-end;
 }
