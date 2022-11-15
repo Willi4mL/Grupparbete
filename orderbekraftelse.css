@@ -1,0 +1,10 @@
+p {
+	padding: 1em;
+}
+
+button{
+	padding: 0.6em 6em;
+	text-align: center;
+	background-color: #000000;
+	color: #ffffff;
+}

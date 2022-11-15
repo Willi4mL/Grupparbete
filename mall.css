@@ -61,12 +61,19 @@ li:hover {
 
 /* main content (med asides) */
 main {
-	display: flex;
+	<<<<<<< HEAD display: flex;
 	position: relative;
 	top: 7em;
 	margin-bottom: 5em;
 	/* z-index: -1; */
+	=======display: flex;
+	position: relative;
+	top: 7em;
+	margin-bottom: 5em;
+	/* z-index: -1; */
+	>>>>>>>ff0bc4c94e17800ef4a18f36e991015dc0e4ca13
 }
+
 
 /* höjd på main och aside */
 .inner-module {
@@ -97,6 +104,13 @@ main .inner-module {
 
 .phone-menu:hover {
 	cursor: pointer;
+}
+
+button {
+	padding: 0.6em 6em;
+	text-align: center;
+	background-color: #000000;
+	color: #ffffff;
 }
 
 /* Kundkorgen i header */
@@ -212,6 +226,18 @@ header>section.header-section>nav.meny>ul>li {
 	top: 0.5em;
 	bottom: 0.5em;
 
+}
+
+.meny {
+	display: none;
+	position: absolute;
+	top: 5em;
+}
+
+input:checked~.meny {
+	display: block;
+	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+	z-index: 30000;
 }
 
 .meny {
