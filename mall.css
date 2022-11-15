@@ -214,6 +214,7 @@ header>section.header-section>nav.meny>ul>li {
 .meny {
     display: none;
     position: absolute;
+    transform: rotate(360deg);
     top: 5em;
 }
 

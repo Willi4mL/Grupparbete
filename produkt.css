@@ -19,4 +19,22 @@
 		grid-template-rows: auto;
 	}
 }
-	
+
+.box{
+	display: none;
+}
+
+.overlay{
+	background-color: #dd4242;
+    width: 8em;
+    height: 10em;
+}
+
+.infobox{
+	position: absolute;
+}
+
+input:checked~.infobox {
+    display: block;
+    box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+}
