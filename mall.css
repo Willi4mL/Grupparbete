@@ -63,7 +63,6 @@ display: flex;
 position:relative;
 top:7em;
 margin-bottom: 5em;
-z-index: -1;
 }
 
 /* höjd på main och aside */
