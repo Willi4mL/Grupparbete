@@ -222,12 +222,12 @@ header>section.header-section>nav.meny>ul>li {
 .meny{
     display:none;
     position:absolute;
-    top:5em;}
+    top:5em;
+}
 
 input:checked ~ .meny{
     display:block;
     box-shadow: 5px 4px 5px rgba(000,000,000, 0.5);
-    z-index: 30000;
 }
 
 .meny {
