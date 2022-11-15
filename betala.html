@@ -1,12 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="stylesheet" href="betala.css">
+	<link href="mall.css" rel="stylesheet" type="text/css">
+	<!--Länk font spartan-->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Indie+Flower&family=League+Spartan:wght@700&family=Nunito+Sans:wght@200&family=Poppins&family=Raleway:wght@800&family=Roboto+Mono&display=swap"
+		rel="stylesheet">
+	<title>Engarment</title>
+	<!-- Favicon (icon i webbläsaren) -->
+	<link rel="icon" type="image/x-icon" href="/bilder/logga/Logga-tyg-Transparent.png">
 </head>
+
 <body>
-	<p>betala</p>
+	<header>
+		<section class="header-section">
+			<!-- Hamburgermeny -->
+			<label for="checkbox"><img class="phone-menu" src="bilder/ikoner/meny-transparent.png"></label>
+			<input type="checkbox" id="checkbox">
+			<!-- Dropdownmeny -->
+			<nav class="meny">
+				<ul>
+					<li> <a target="_self" href="produkt.html">Produkter</a></li>
+					<li> <a target="_self" href="om-oss.html">Om oss</a></li>
+					<li> <a target="_self" href="startsida.html">Hem</a></li>
+				</ul>
+			</nav>
+			<!-- Logga -->
+			<img class="logo" src="bilder/Logga/Logga-Transparent.png">
+			<!-- Kundvagn -->
+			<a target="_self" href="betala.html"><img class="cart" src="bilder/ikoner/cart-transparent.png"></a>
+		</section>
+		<!-- Meny under headern -->
+		<nav>
+			<ul>
+				<li><a target="_self" href="produkt.html">Produkter</a></li>
+				<li><a target="_self" href="om-oss.html">Om oss</a></li>
+				<li><a target="_self" href="startsida.html">Hem</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<!-- Sidebar -->
+		<aside></aside>
+		<!-- Innehåll -->
+		<section class="inner-module">
+
+			<!-- ORDERÖVERSIKT -->
+
+			<div class="h2-cont">
+				<h2>Orderöversikt</h2>
+				<a href="produkt.html">
+					<h2>Fortsätt handla</h2>
+				</a>
+
+			</div>
+			<section id="order-cont">
+				<section class="card-cont">
+					<img class="order-img" src="/bilder/Produkt/nopp1.png" alt="fabric_s-haver_black">
+					<p>Pilo 2 - charcoal
+					</p>
+					<p>650:-</p>
+					<label class="antal" for="antal">Antal:</label>
+					<select name="quantity" id="antal">
+						<option value="one">1</option>
+						<option value="two">2</option>
+						<option value="three">3</option>
+						<option value="four">4</option>
+						<option value="five">5</option>
+						<option value="six">6</option>
+						<option value="seven">7</option>
+						<option value="eight">8</option>
+						<option value="nine">9</option>
+						<option value="ten">10</option>
+					</select>
+					<img class="remove-item" src="/bilder/ikoner/charm_circle-cross.png" alt="remove">
+				</section>
+				<hr />
+				<div class="order-sum">
+					<p>Frakt:</p>
+					<div></div>
+					<p>49:-</p>
+				</div>
+				<hr class="hr1" />
+				<div class="order-sum">
+					<p>Totalt:</p>
+					<div></div>
+					<p><strong>699:-</strong></p>
+				</div>
+			</section>
+
+
+			<!-- LEVERANS -->
+
+			<div class="h2-cont">
+				<h2>Leverans</h2>
+			</div>
+			<section id="leverans-cont">
+				<div class="leverans-item"> <input name="leverans" id="budbee" type="radio"><label for="budbee">Budbee
+						paketbox</label>
+					<div class="leverans-icons"></div><img src="/bilder/ikoner/budbeelogogreen 1.png">
+				</div>
+				<p>leverans 2-3 arbetsdagar</p>
+				<hr />
+				<div class="leverans-item"> <input id="instabox" name="leverans" type="radio"> <label
+						for="instabox">Instabox
+						skåp</label>
+					<div class="leverans-icons"></div><img
+						src="/bilder/ikoner/instabox-logotyp-landskap-600x370@2x 1.png">
+				</div>
+				<p>leverans 2 arbetsdagar</p>
+				<hr />
+				<div class="leverans-item"> <input id="postnord" name="leverans" type="radio"> <label
+						for="postnord">Postnord hemleverans</label>
+					<div class="leverans-icons"></div><img src="/bilder/ikoner/postnord 1.png">
+				</div>
+				<p>leverans 4 arbetsdagar</p>
+				<hr />
+				<div class="leverans-item"> <input id="dhl" name="leverans" type="radio"><label for="dhl">DHL
+						ombud</label>
+					<div class="leverans-icons"></div><img src="/bilder/ikoner/dhl-1-logo 2.png" alt="">
+				</div>
+				<p>leverans 3-5 arbetsdagar</p>
+			</section>
+
+
+			<!-- DINA UPPGIFTER -->
+
+			<div class="h2-cont">
+				<h2>Dina uppgifter</h2>
+			</div>
+			<section>
+				<form action="" id="info-cont">
+					<div><input placeholder="*Personnummer" type="text">
+						<hr />
+					</div>
+
+					<div><input placeholder="*Mobilnummer" type="tel" required>
+						<hr />
+					</div>
+					<div><input placeholder="*E-postadress" type="email" required>
+						<hr />
+					</div>
+					<div><input placeholder="*Förnamn" type="text" required>
+						<hr />
+					</div>
+					<div><input placeholder="*Efternamn" type="text" required>
+						<hr />
+					</div>
+					<div><input placeholder="*Adress" type="text" required>
+						<hr />
+					</div>
+					<div><input placeholder="*Ort" type="text" required></div>
+					<div><input class="postnummer" placeholder="*Postnummer" type=" text" required></div>
+				</form>
+			</section>
+
+			<!-- BETALSÄTT -->
+
+			<div class="h2-cont">
+				<h2>Betalsätt</h2>
+			</div>
+			<section id="payment-cont">
+				<div class="leverans-item"> <input name="betala" id="klarna" type="radio"><label
+						for="klarna">Klarna</label>
+					<div class="leverans-icons"></div><img src="/bilder/ikoner/Klarna 1.png">
+				</div>
+				<p>leverans 2-3 arbetsdagar</p>
+				<hr />
+				<div class="leverans-item"> <input name="betala" id="card" type="radio"><label for="card">Betala med
+						kort</label>
+					<div class="leverans-icons"></div><img class="pay-card" src="/bilder/ikoner/kort.png">
+				</div>
+				<p>fyll i din kortuppgifter</p>
+				<hr />
+				<div class="leverans-item"> <input name="betala" id="swish" type="radio"><label
+						for="swish">Swish</label>
+					<div class="leverans-icons"></div><img src="/bilder/ikoner/swishpng 1.png">
+				</div>
+				<p>fyll i ditt telefonnummer</p>
+
+			</section>
+			<a href="orderbekraftelse.html">
+				<button target="_self" class="pay-btn">Betala</button>
+			</a>
+
+
+		</section>
+		<!-- Sidebar -->
+		<aside></aside>
+	</main>
+	<footer>
+		<!-- Innehåll i footern -->
+		<ul>
+			<li class=" bold">Öppettider</li>
+			<li>Mån-Fre 10.00-20.00</li>
+			<li>Lör-Sön 10.00-14.00</li>
+		</ul>
+		<ul>
+			<li class=" bold">Telefon</li>
+			<li>076-483 33 56</li>
+		</ul>
+		<ul>
+			<li class=" bold">Adress</li>
+			<li>Smista allé 42</li>
+			<li> Stockholm</li>
+		</ul>
+		<ul>
+			<li class=" bold">Mail</li>
+			<li><a href="mailto:Engarment@gmail.com?subject=Frågor om produkterna">Engarment@gmail.com</a></li>
+		</ul>
+		<ul>
+			<li class=" bold kundservice">Kundservice</li>
+			<li class=" bold medlem">Bli Medlem</li>
+		</ul>
+		<!-- Ikoner i footern -->
+		<ul>
+			<li class="footer-img"><a target="_blank" href="https://www.instagram.com/"><img
+						src="bilder/ikoner/instagram.png"></li></a>
+		</ul>
+		<ul>
+			<li class="footer-img"> <a target="_blank"
+					href="https://www.facebook.com/?stype=lo&jlou=AfevWtmoZImr1JfSg-693mxUqSwVQGKWf-_FSQuWIwujLqWQoc5FgJrbjv7ddfSqAIT3j_xcwl7PlYGWR9hF7wfV&smuh=52013&lh=Ac-A35kZTjf6Uv4lPZw"><img
+						src="bilder/ikoner/facebook.png"></li></a>
+		</ul>
+		<ul>
+			<li class="footer-img"><a target="blank" href="https://www.tiktok.com/sv-SE/"><img
+						src="bilder/ikoner/tiktok.png"></li></a>
+		</ul>
+
+	</footer>
 </body>
+
 </html>
