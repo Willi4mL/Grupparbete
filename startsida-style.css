@@ -34,7 +34,6 @@ article.text .rubrik-bold{
 	height: 100%;
 	opacity: 0;
 	animation: display 32s infinite;
-	border-radius: 0.2em;
   }
   
   img:nth-child(2) {
@@ -73,6 +72,10 @@ article.text .rubrik-bold{
 	@media screen and (max-width: 768px){
 		main > .inner-module > * {
 			display: none;
+		}
+		main > .inner-module{
+			padding-left: 0;
+			padding-right: 0;
 		}
 		main > .inner-module > .pic-container{
 			display: block;
