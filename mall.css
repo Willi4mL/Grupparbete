@@ -63,8 +63,9 @@ display: flex;
 position:relative;
 top:7em;
 margin-bottom: 5em;
-z-index: -1;
+/* z-index: -1; */
 }
+
 
 /* höjd på main och aside */
 .inner-module {
@@ -94,6 +95,13 @@ main .inner-module {
 
 .phone-menu:hover {
     cursor: pointer;
+}
+
+button {
+    padding: 0.6em 6em;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* Kundkorgen i header */
@@ -159,6 +167,7 @@ footer {
     min-height: 5em;
     position: relative;
     bottom: 0;
+    z-index: -1;
 }
 
 footer>ul {
@@ -209,6 +218,16 @@ header>section.header-section>nav.meny>ul>li {
     top: 0.5em;
     bottom: 0.5em;
 
+}
+.meny{
+    display:none;
+    position:absolute;
+    top:5em;}
+
+input:checked ~ .meny{
+    display:block;
+    box-shadow: 5px 4px 5px rgba(000,000,000, 0.5);
+    z-index: 30000;
 }
 
 .meny {
