@@ -24,7 +24,6 @@
 	grid-template-rows: 2;
 }
 
-
 .order-img {
 	padding-top: 1.5em;
 	grid-row: 1 / span 2;
@@ -38,7 +37,6 @@
 	justify-self: end;
 	padding-right: 1.5em;
 }
-
 
 .card-cont p:nth-of-type(1) {
 	text-align: start;
@@ -69,11 +67,11 @@
 	flex-grow: 1;
 }
 
-
-
 #order-cont p {
 	padding: 1em;
 }
+
+/* LEVERANS */
 
 #leverans-cont {
 	border: 1px solid rgba(0, 0, 0, 0.128);
@@ -86,22 +84,18 @@
 
 #leverans-cont p:nth-of-type(1) {
 	padding-bottom: 1.5em;
-
 }
 
 #leverans-cont p:nth-of-type(2) {
 	padding-bottom: 1.5em;
-
 }
 
 #leverans-cont p:nth-of-type(3) {
 	padding-bottom: 1.5em;
-
 }
 
 #leverans-cont p:nth-of-type(4) {
 	padding-bottom: 1.5em;
-
 }
 
 .leverans-item {
@@ -127,6 +121,68 @@ input[type="radio"] {
 input[type="radio"]:hover {
 	cursor: pointer;
 }
+
+/* Informations/din uppgifter GRID */
+
+#info-cont {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	border: 1px solid rgba(0, 0, 0, 0.128);
+	margin-bottom: 10em;
+	border-radius: 4px;
+}
+
+
+input[type="text"] {
+	width: 100%;
+	padding: 1.5em;
+	border: none;
+}
+
+input[type="text"]:focus {
+	outline: none;
+}
+
+input[type="tel"] {
+	width: 100%;
+	padding: 1.5em;
+	border: none;
+}
+
+input[type="tel"]:focus {
+	outline: none;
+}
+
+input[type="email"] {
+	width: 100%;
+	padding: 1.5em;
+	border: none;
+}
+
+input[type="email"]:focus {
+	outline: none;
+}
+
+.postnummer {
+	padding: 1.5em;
+	width: 100%;
+	border: none;
+}
+
+.postnummer:focus {
+	outline: none;
+}
+
+#info-cont div:nth-of-type(1) {
+	grid-column: 1 / span 2;
+}
+
+#info-cont div:nth-of-type(6) {
+	grid-column: 1 / span 2;
+}
+
+/* BETALSÄTT */
 
 #payment-cont {
 	border: 1px solid rgba(0, 0, 0, 0.128);
@@ -160,7 +216,6 @@ input[type="radio"]:hover {
 	padding-bottom: 1em;
 }
 
-
 .pay-btn {
 	background-color: black;
 	color: white;
@@ -172,7 +227,10 @@ input[type="radio"]:hover {
 	cursor: pointer;
 }
 
-
+input[type="radio"] {
+	width: 17px;
+	height: 17px;
+}
 
 hr {
 	border: 0.1px solid rgba(0, 0, 0, 0.128);
@@ -180,64 +238,4 @@ hr {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-input[type="radio"] {
-	width: 17px;
-	height: 17px;
-}
-
-/* Informations/din uppgifter GRID */
-
-#info-cont {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(5, 1fr);
-	border: 1px solid rgba(0, 0, 0, 0.128);
-	margin-bottom: 10em;
-	border-radius: 4px;
-
-}
-
-
-input[type="text"] {
-	width: 100%;
-	padding: 1.5em;
-	border: none;
-
-}
-
-
-input[type="text"]:focus {
-	outline: none;
-}
-
-input[type="email"] {
-	width: 100%;
-	padding: 1.5em;
-	border: none;
-}
-
-input[type="email"]:focus {
-	outline: none;
-}
-
-.postnummer {
-	padding: 1.5em;
-	width: 100%;
-	border: none;
-}
-
-.postnummer:focus {
-	outline: none;
-}
-
-
-#info-cont div:nth-of-type(1) {
-	grid-column: 1 / span 2;
-
-}
-
-#info-cont div:nth-of-type(6) {
-	grid-column: 1 / span 2;
 }

@@ -57,14 +57,14 @@
 				<h2>Fortsätt handla</h2>
 			</div>
 			<section id="order-cont">
-				<div class="card-cont">
+				<section class="card-cont">
 					<img class="order-img" src="/bilder/Produkt/nopp1.png" alt="fabric_s-haver_black">
 					<p>Pilo 2 - charcoal
 					</p>
 					<p>650:-</p>
 					<p>- 1 +</p>
 					<img class="remove-item" src="/bilder/ikoner/charm_circle-cross.png" alt="remove">
-				</div>
+				</section>
 				<hr />
 				<div class="order-sum">
 					<p>Frakt:</p>
@@ -110,7 +110,6 @@
 						ombud</label>
 					<div class="leverans-icons"></div><img src="/bilder/ikoner/dhl-1-logo 2.png" alt="">
 				</div>
-
 				<p>leverans 3-5 arbetsdagar</p>
 			</section>
 
@@ -120,29 +119,30 @@
 			<div class="h2-cont">
 				<h2>Dina uppgifter</h2>
 			</div>
-			<section id="info-cont">
-				<div><input placeholder="*Personnummer" type="text">
-					<hr />
-				</div>
+			<section>
+				<form action="" id="info-cont">
+					<div><input placeholder="*Personnummer" type="text">
+						<hr />
+					</div>
 
-				<div><input placeholder="*Mobilnummer" type="text">
-					<hr />
-				</div>
-				<div><input placeholder="*E-postadress" type="email">
-					<hr />
-				</div>
-				<div><input placeholder="*Förnamn" type="text">
-					<hr />
-				</div>
-				<div><input placeholder="*Efternamn" type="text">
-					<hr />
-				</div>
-				<div><input placeholder="*Adress" type="text">
-					<hr />
-				</div>
-				<div><input placeholder="*Ort" type="text"></div>
-				<div><input class="postnummer" placeholder="*Postnummer" type=" text"></div>
-
+					<div><input placeholder="*Mobilnummer" type="tel" required>
+						<hr />
+					</div>
+					<div><input placeholder="*E-postadress" type="email" required>
+						<hr />
+					</div>
+					<div><input placeholder="*Förnamn" type="text" required>
+						<hr />
+					</div>
+					<div><input placeholder="*Efternamn" type="text" required>
+						<hr />
+					</div>
+					<div><input placeholder="*Adress" type="text" required>
+						<hr />
+					</div>
+					<div><input placeholder="*Ort" type="text" required></div>
+					<div><input class="postnummer" placeholder="*Postnummer" type=" text" required></div>
+				</form>
 			</section>
 
 			<!-- BETALSÄTT -->
@@ -171,8 +171,6 @@
 
 			</section>
 			<button class="pay-btn">Betala</button>
-
-
 
 		</section>
 		<!-- Sidebar -->
