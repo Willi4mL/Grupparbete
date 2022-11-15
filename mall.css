@@ -61,17 +61,16 @@ li:hover {
 
 /* main content (med asides) */
 main {
-	<<<<<<< HEAD display: flex;
+	display: flex;
 	position: relative;
 	top: 7em;
 	margin-bottom: 5em;
 	/* z-index: -1; */
-	=======display: flex;
+	display: flex;
 	position: relative;
 	top: 7em;
 	margin-bottom: 5em;
 	/* z-index: -1; */
-	>>>>>>>ff0bc4c94e17800ef4a18f36e991015dc0e4ca13
 }
 
 
