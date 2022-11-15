@@ -1,0 +1,40 @@
+.produktblad{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+}
+
+.produktblad > img{
+	border:1px solid #bbbbbb;
+	/* background-color: #E8E7E7; */
+	width: 100%;
+	position: relative;
+}
+
+
+@media screen and (min-width: 768px){
+	.produktblad{
+		
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+	}
+}
+
+.box{
+	display: none;
+}
+
+.overlay{
+	background-color: #dd4242;
+    width: 8em;
+    height: 10em;
+}
+
+.infobox{
+	position: absolute;
+}
+
+input:checked~.infobox {
+    display: block;
+    box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+}
