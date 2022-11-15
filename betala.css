@@ -1,0 +1,257 @@
+.h2-cont {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 0.3em;
+	padding-top: 5em;
+	font-size: 0.7em;
+}
+
+.h2-cont>a>h2:hover {
+	text-decoration: underline;
+}
+
+
+/* Orderöversikt/card */
+
+#order-cont {
+	border: 1px solid rgba(0, 0, 0, 0.128);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-radius: 4px;
+	margin-bottom: 10em;
+}
+
+.card-cont {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 2;
+}
+
+.order-img {
+	padding-top: 1.5em;
+	grid-row: 1 / span 2;
+}
+
+.remove-item {
+	width: 3em;
+	grid-column: 3;
+	grid-row: 1;
+	align-self: center;
+	justify-self: end;
+	padding-right: 1.5em;
+}
+
+.card-cont p:nth-of-type(1) {
+	text-align: start;
+}
+
+.card-cont p:nth-of-type(2) {
+	grid-column: 3;
+	text-align: end;
+}
+
+.card-cont select {
+	grid-column: 2;
+	grid-row: 2;
+	text-align: start;
+	width: 4em;
+	height: 2em;
+	align-self: center;
+	padding-left: 1em;
+	margin-left: 1em;
+}
+
+.antal {
+	grid-column: 2;
+	grid-row: 2;
+	text-align: start;
+	margin-left: 1em;
+}
+
+.hr1 {
+	border: 0.3px dashed rgba(0, 0, 0, 0.128);
+}
+
+.order-sum {
+	display: flex;
+	width: 100%;
+}
+
+.order-sum>div {
+	flex-grow: 1;
+}
+
+#order-cont p {
+	padding: 1em;
+}
+
+/* LEVERANS */
+
+#leverans-cont {
+	border: 1px solid rgba(0, 0, 0, 0.128);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-radius: 4px;
+	margin-bottom: 10em;
+}
+
+#leverans-cont p:nth-of-type(1) {
+	padding-bottom: 1.5em;
+}
+
+#leverans-cont p:nth-of-type(2) {
+	padding-bottom: 1.5em;
+}
+
+#leverans-cont p:nth-of-type(3) {
+	padding-bottom: 1.5em;
+}
+
+#leverans-cont p:nth-of-type(4) {
+	padding-bottom: 1.5em;
+}
+
+.leverans-item {
+	padding: 1em 1.2em;
+	padding-bottom: 0;
+	display: flex;
+	width: 100%;
+	height: 2.5em;
+}
+
+.leverans-icons {
+	flex-grow: 1;
+}
+
+.pay-card {
+	width: 2.5em;
+}
+
+input[type="radio"] {
+	margin-right: 1em;
+}
+
+input[type="radio"]:hover {
+	cursor: pointer;
+}
+
+/* Informations/din uppgifter GRID */
+
+#info-cont {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	border: 1px solid rgba(0, 0, 0, 0.128);
+	margin-bottom: 10em;
+	border-radius: 4px;
+}
+
+
+input[type="text"] {
+	width: 100%;
+	padding: 1.5em;
+	border: none;
+}
+
+input[type="text"]:focus {
+	outline: none;
+}
+
+input[type="tel"] {
+	width: 100%;
+	padding: 1.5em;
+	border: none;
+}
+
+input[type="tel"]:focus {
+	outline: none;
+}
+
+input[type="email"] {
+	width: 100%;
+	padding: 1.5em;
+	border: none;
+}
+
+input[type="email"]:focus {
+	outline: none;
+}
+
+.postnummer {
+	padding: 1.5em;
+	width: 100%;
+	border: none;
+}
+
+.postnummer:focus {
+	outline: none;
+}
+
+#info-cont div:nth-of-type(1) {
+	grid-column: 1 / span 2;
+}
+
+#info-cont div:nth-of-type(6) {
+	grid-column: 1 / span 2;
+}
+
+/* BETALSÄTT */
+
+#payment-cont {
+	border: 1px solid rgba(0, 0, 0, 0.128);
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.payment-item {
+	padding: 1em 1em;
+	padding-bottom: 0;
+}
+
+#leverans-cont p,
+#payment-cont p {
+	padding-left: 4em;
+	opacity: 0.5;
+	font-size: 0.8rem;
+}
+
+#payment-cont p:nth-of-type(1) {
+	padding-bottom: 1em;
+}
+
+#payment-cont p:nth-of-type(2) {
+	padding-bottom: 1em;
+}
+
+#payment-cont p:nth-of-type(3) {
+	padding-bottom: 1em;
+}
+
+.pay-btn {
+	/* background-color: black;
+	color: white;
+	padding: 0.6em 6em; */
+	margin-top: 5em;
+}
+
+.pay-btn:hover {
+	cursor: pointer;
+}
+
+input[type="radio"] {
+	width: 17px;
+	height: 17px;
+}
+
+hr {
+	border: 0.1px solid rgba(0, 0, 0, 0.128);
+	width: 95%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
