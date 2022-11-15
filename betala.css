@@ -47,12 +47,17 @@
 	text-align: end;
 }
 
-.card-cont p:nth-of-type(3) {
+.card-cont select {
 	grid-column: 2;
 	grid-row: 2;
 	text-align: start;
-	letter-spacing: 0.4em;
+	width: 4em;
+	height: 2em;
+	align-self: center;
+	padding-left: 1em;
+	margin-left: 1em;
 }
+
 
 .hr1 {
 	border: 0.3px dashed rgba(0, 0, 0, 0.128);
