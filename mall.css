@@ -65,12 +65,6 @@ main {
 	position: relative;
 	top: 7em;
 	margin-bottom: 5em;
-	/* z-index: -1; */
-	display: flex;
-	position: relative;
-	top: 7em;
-	margin-bottom: 5em;
-	/* z-index: -1; */
 }
 
 
@@ -227,7 +221,30 @@ header>section.header-section>nav.meny>ul>li {
 
 }
 
+<<<<<<< HEAD .meny {
+	display: none;
+	position: absolute;
+	top: 5em;
+}
+
+input:checked~.meny {
+	display: block;
+	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+}
+
 .meny {
+	display: none;
+	position: absolute;
+	transform: rotate(360deg);
+	top: 5em;
+}
+
+input:checked~.meny {
+	display: block;
+	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+}
+
+=======>>>>>>>c5234747a39382af94ae08c530bfbcc6f9147989 .meny {
 	display: none;
 	position: absolute;
 	top: 5em;
