@@ -15,6 +15,7 @@ header {
 	position: fixed;
 	width: 100%;
 	top: 0;
+	z-index: 1;
 }
 
 header,
@@ -54,7 +55,7 @@ a {
 	color: black;
 }
 
-li:hover {
+a:hover {
 	cursor: pointer;
 }
 
@@ -65,8 +66,8 @@ main {
 	position: relative;
 	top: 7em;
 	margin-bottom: 5em;
-	/* z-index: -1; */
 }
+
 
 /* höjd på main och aside */
 .inner-module {
@@ -97,6 +98,13 @@ main .inner-module {
 
 .phone-menu:hover {
 	cursor: pointer;
+}
+
+button {
+	padding: 0.6em 6em;
+	text-align: center;
+	background-color: #000000;
+	color: #ffffff;
 }
 
 /* Kundkorgen i header */
@@ -142,10 +150,9 @@ aside {
 
 	.phone-menu {
 		display: none;
-
 	}
 
-	input[type="checkbox"]:checked~.meny {
+	input:checked~.meny {
 		visibility: hidden;
 	}
 
@@ -221,6 +228,46 @@ header>section.header-section>nav.meny>ul>li {
 	top: 5em;
 }
 
+HEAD .meny {
+	display: none;
+	position: absolute;
+	top: 5em;
+}
+
+input:checked~.meny {
+	display: block;
+	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+}
+
+.meny {
+	display: none;
+	position: absolute;
+	transform: rotate(360deg);
+	top: 5em;
+}
+
+input:checked~.meny {
+	display: block;
+	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+}
+
+.meny {
+	display: none;
+	position: absolute;
+	top: 5em;
+}
+
+input:checked~.meny {
+	display: block;
+	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+	z-index: 30000;
+}
+
+.meny {
+	display: none;
+	position: absolute;
+	top: 5em;
+}
 
 input:checked~.meny {
 	display: block;
