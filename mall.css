@@ -155,9 +155,6 @@ aside {
 	input:checked~.meny {
 		visibility: hidden;
 	}
-
-
-
 }
 
 footer {
