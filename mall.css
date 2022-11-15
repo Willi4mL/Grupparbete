@@ -15,7 +15,7 @@ header {
 	position: fixed;
 	width: 100%;
 	top: 0;
-    z-index: 1;
+	z-index: 1;
 }
 
 header,
@@ -62,10 +62,10 @@ li:hover {
 
 /* main content (med asides) */
 main {
-display: flex;
-position:relative;
-top:7em;
-margin-bottom: 5em;
+	display: flex;
+	position: relative;
+	top: 7em;
+	margin-bottom: 5em;
 }
 
 
@@ -221,27 +221,34 @@ header>section.header-section>nav.meny>ul>li {
 	bottom: 0.5em;
 
 }
-.meny{
-    display:none;
-    position:absolute;
-    top:5em;
-}
-
-input:checked ~ .meny{
-    display:block;
-    box-shadow: 5px 4px 5px rgba(000,000,000, 0.5);
-}
 
 .meny {
-    display: none;
-    position: absolute;
-    transform: rotate(360deg);
-    top: 5em;
+	display: none;
+	position: absolute;
+	top: 5em;
+}
+
+HEAD .meny {
+	display: none;
+	position: absolute;
+	top: 5em;
 }
 
 input:checked~.meny {
-    display: block;
-    box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+	display: block;
+	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+}
+
+.meny {
+	display: none;
+	position: absolute;
+	transform: rotate(360deg);
+	top: 5em;
+}
+
+input:checked~.meny {
+	display: block;
+	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
 }
 
 .meny {
