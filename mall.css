@@ -58,13 +58,14 @@ li:hover {
 	cursor: pointer;
 }
 
+
 /* main content (med asides) */
 main {
 	display: flex;
 	position: relative;
 	top: 7em;
 	margin-bottom: 5em;
-	z-index: -1;
+	/* z-index: -1; */
 }
 
 /* höjd på main och aside */
@@ -91,6 +92,7 @@ main .inner-module {
 	max-height: 25px;
 	align-self: center;
 	margin-left: 1em;
+
 }
 
 .phone-menu:hover {
@@ -140,6 +142,7 @@ aside {
 
 	.phone-menu {
 		display: none;
+
 	}
 
 	input[type="checkbox"]:checked~.meny {
@@ -217,6 +220,7 @@ header>section.header-section>nav.meny>ul>li {
 	position: absolute;
 	top: 5em;
 }
+
 
 input:checked~.meny {
 	display: block;

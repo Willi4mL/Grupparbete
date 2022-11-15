@@ -54,7 +54,10 @@
 
 			<div class="h2-cont">
 				<h2>Orderöversikt</h2>
-				<h2>Fortsätt handla</h2>
+				<a href="produkt.html">
+					<h2>Fortsätt handla</h2>
+				</a>
+
 			</div>
 			<section id="order-cont">
 				<section class="card-cont">
@@ -62,7 +65,8 @@
 					<p>Pilo 2 - charcoal
 					</p>
 					<p>650:-</p>
-					<select name="quantity" id="">
+					<label class="antal" for="antal">Antal:</label>
+					<select name="quantity" id="antal">
 						<option value="one">1</option>
 						<option value="two">2</option>
 						<option value="three">3</option>
@@ -181,7 +185,10 @@
 				<p>fyll i ditt telefonnummer</p>
 
 			</section>
-			<button class="pay-btn">Betala</button>
+			<a href="orderbekraftelse.html">
+				<button target="_self" class="pay-btn">Betala</button>
+			</a>
+
 
 		</section>
 		<!-- Sidebar -->

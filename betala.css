@@ -6,6 +6,11 @@
 	font-size: 0.7em;
 }
 
+.h2-cont>a>h2:hover {
+	text-decoration: underline;
+}
+
+
 /* Orderöversikt/card */
 
 #order-cont {
@@ -58,6 +63,12 @@
 	margin-left: 1em;
 }
 
+.antal {
+	grid-column: 2;
+	grid-row: 2;
+	text-align: start;
+	margin-left: 1em;
+}
 
 .hr1 {
 	border: 0.3px dashed rgba(0, 0, 0, 0.128);
@@ -222,9 +233,9 @@ input[type="email"]:focus {
 }
 
 .pay-btn {
-	background-color: black;
+	/* background-color: black;
 	color: white;
-	padding: 0.6em 6em;
+	padding: 0.6em 6em; */
 	margin-top: 5em;
 }
 
