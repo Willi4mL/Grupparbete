@@ -22,7 +22,7 @@ img {
 /* huvudcontainer för griden */
 .wrapper{
 	display: grid;
-	gap: 1em;
+	gap: 2em;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto;
 }
@@ -34,7 +34,7 @@ img {
 }
 /* marginal ner till grid med bilder och text */
 .textmargin{
-	margin-bottom: 5em;
+	margin-bottom: 3em;
 }
 
 /* tar bort punkterna listan */
@@ -42,6 +42,7 @@ section>ul {
 	list-style: none;
 }
 
+/* media querys när bredden går över 768px */
 @media only screen and (min-width: 768px) {
 	.item3 {
 			grid-row: 1;
