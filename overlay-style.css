@@ -1,0 +1,19 @@
+.overlay {
+	position: absolute;
+	left: 26em;
+	top: 10em;
+	z-index: 1;
+	width: 25em;
+	background-color: #fff;
+	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+	padding: 1em;
+}
+
+.flex-cont {
+	display: flex;
+	flex-direction: column;
+}
+
+.add-item {
+	padding: 0.4em 1.5em;
+}
