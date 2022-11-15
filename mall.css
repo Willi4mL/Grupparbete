@@ -63,7 +63,7 @@ display: flex;
 position:relative;
 top:7em;
 margin-bottom: 5em;
-z-index: -1;
+/* z-index: -1; */
 }
 
 /* höjd på main och aside */
@@ -94,6 +94,13 @@ main .inner-module {
 
 .phone-menu:hover{
     cursor: pointer;
+}
+
+button {
+    padding: 0.6em 6em;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* Kundkorgen i header */
