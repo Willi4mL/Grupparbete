@@ -1,15 +1,16 @@
+/* Blurar bakgrunden bakom pop-up */
 .inner-module,
 header,
 footer {
 	filter: blur(3px);
 }
 
+/* Pop-up produktens fönster */
 .overlay-img {
 	width: 100%;
 	position: relative;
 	height: 5px;
 }
-
 
 .produkt-img {
 	border: 1px solid #bbbbbb;
@@ -36,6 +37,7 @@ footer {
 	padding: 1em;
 }
 
+/* Position på p-taggarna */
 .flex-cont>p:nth-of-type(1) {
 	position: absolute;
 	top: 4em;
@@ -60,6 +62,7 @@ footer {
 	width: 50%;
 }
 
+/* "Ta bort" knapp/bild */
 .remove-link {
 	align-self: flex-end;
 }
@@ -68,6 +71,7 @@ footer {
 	width: 1.5em;
 }
 
+/* "Lägg-till" knapp */
 .add-item {
 	padding: 0.3em 1em;
 	width: 40%;
@@ -76,6 +80,7 @@ footer {
 	margin-top: 1.5em;
 }
 
+/* Ändrar storlek och plats på Pop-up beroende på skärmbredd */
 @media screen and (min-width: 700px) and (max-width: 900px) {
 	.overlay {
 		left: 25vw;
