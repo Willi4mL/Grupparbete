@@ -55,7 +55,7 @@ a {
 	color: black;
 }
 
-li:hover {
+a:hover {
 	cursor: pointer;
 }
 
@@ -124,9 +124,7 @@ button {
 	width: 20em;
 	height: 5em;
 	align-self: center;
-
 }
-
 aside {
 	display: none;
 }
@@ -272,4 +270,8 @@ input:checked~.meny {
 input:checked~.meny {
 	display: block;
 	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+}
+
+.linklogo {
+	height: 80px;
 }
