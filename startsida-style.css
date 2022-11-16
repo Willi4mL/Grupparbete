@@ -11,28 +11,54 @@ article.text .rubrik-bold{
 }
 
 .bild-mellan{
-	display: none;
+	display: block;
 	width: 100%;
 	height: 25em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	height: 100%;
+}
+
+
+main > .inner-module > .pic-container{
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top:-2em;
+	display: flex;
+	margin-bottom:2em;
+}
+
+main > .inner-module > .pic-container > img{
+	height: 30em;
+	width: 100%;
+}	
+
+main > .inner-module > .text{
+	display: block;
+	flex-wrap: wrap;
 }
 
 /* Bilder som ändras */
   .pic-container {
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
+	display: none;
 	position: relative;
-	width: 100%;
-	height: 25em;
 	display: flex;
 	margin-bottom:2em;
+	height:30em;
+	width: 100%;
   }
   
 .pic-container > img {
 	position: absolute;
-	width: 100%;
-	height: 100%;
 	opacity: 0;
+	object-fit: cover !important;
+	height: 100% !important;
 	animation: display 32s infinite;
   }
   
@@ -68,38 +94,22 @@ article.text .rubrik-bold{
 	}
 	}
 
-	/* Liten skärm */
-	@media screen and (max-width: 768px){
+	/* Stor skärm */
+	@media screen and (min-width: 768px){
 		main > .inner-module > * {
-			display: none;
+			display: block;
 		}
 		main > .inner-module{
-			padding-left: 0;
-			padding-right: 0;
+			padding-left: 3em;
+			padding-right: 3em;
 		}
-		main > .inner-module > .pic-container{
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			position: relative;
-			top:-2em;
-			display: flex;
-			max-width: 100%;
-			margin-bottom:2em;
-		}
+	
 		main > .inner-module > .pic-container > img{
-			max-width: 100%;
-		}
-		main > .inner-module > .text{
-			display: block;
-			flex-wrap: wrap;
-		}
+			width:100%; 
+			height:100%; 
+			object-fit: contain;
+		}	
 		.bild-mellan{
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			padding-top: 2em;
-			padding-bottom: 2em;
-			height: 100%;
+			display: none;
 		}
 	}
