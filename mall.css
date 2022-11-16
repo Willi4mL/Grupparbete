@@ -271,3 +271,7 @@ input:checked~.meny {
 	display: block;
 	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
 }
+
+.linklogo {
+	height: 80px;
+}
