@@ -1,7 +1,13 @@
+.inner-module,
+header,
+footer {
+	filter: blur(3px);
+}
+
 .overlay {
 	position: fixed;
 	left: 30em;
-	top: 10em;
+	top: 8em;
 	z-index: 1;
 	width: 20em;
 	height: fit-content;
