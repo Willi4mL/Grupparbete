@@ -35,9 +35,8 @@ main > .inner-module > .pic-container{
 
 main > .inner-module > .pic-container > img{
 	height: 30em;
-	height: inherit;
 	width: 100%;
-	object-fit:contain;
+	/* object-fit:contain; */
 }	
 
 main > .inner-module > .text{
@@ -53,14 +52,15 @@ main > .inner-module > .text{
 	position: relative;
 	display: flex;
 	margin-bottom:2em;
-	height: 30em;
+	height:30em;
 	width: 100%;
   }
   
 .pic-container > img {
 	position: absolute;
-	
 	opacity: 0;
+	object-fit: cover !important;
+	height: 100% !important;
 	animation: display 32s infinite;
   }
   
