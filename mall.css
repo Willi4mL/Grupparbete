@@ -55,7 +55,7 @@ a {
 	color: black;
 }
 
-li:hover {
+a:hover {
 	cursor: pointer;
 }
 
@@ -124,7 +124,6 @@ button {
 	width: 20em;
 	height: 5em;
 	align-self: center;
-
 }
 
 aside {
@@ -231,10 +230,6 @@ HEAD .meny {
 	top: 5em;
 }
 
-input:checked~.meny {
-	display: block;
-	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
-}
 
 .meny {
 	display: none;
@@ -243,10 +238,13 @@ input:checked~.meny {
 	top: 5em;
 }
 
-input:checked~.meny {
-	display: block;
-	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+
+.meny {
+	display: none;
+	position: absolute;
+	top: 5em;
 }
+
 
 .meny {
 	display: none;
@@ -257,16 +255,8 @@ input:checked~.meny {
 input:checked~.meny {
 	display: block;
 	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
-	z-index: 30000;
 }
 
-.meny {
-	display: none;
-	position: absolute;
-	top: 5em;
-}
-
-input:checked~.meny {
-	display: block;
-	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+.linklogo {
+	height: 80px;
 }

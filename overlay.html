@@ -6,7 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="mall.css" rel="stylesheet" type="text/css">
-	<link href="orderbekraftelse.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="produkt.css">
+	<link rel="stylesheet" href="overlay-style.css">
 	<!--Länk font spartan-->
 	<link
 		href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Indie+Flower&family=League+Spartan:wght@700&family=Nunito+Sans:wght@200&family=Poppins&family=Raleway:wght@800&family=Roboto+Mono&display=swap"
@@ -31,8 +32,7 @@
 				</ul>
 			</nav>
 			<!-- Logga -->
-			<a class="linklogo" target="_self" href="startsida.html"><img class="logo"
-					src="bilder/Logga/Logga-Transparent.png"></a>
+			<img class="logo" src="bilder/Logga/Logga-Transparent.png">
 			<!-- Kundvagn -->
 			<a target="_self" href="betala.html"><img class="cart" src="bilder/ikoner/cart-transparent.png"></a>
 		</section>
@@ -48,10 +48,46 @@
 	<main>
 		<!-- Sidebar -->
 		<aside></aside>
+		<!-- Innehåll i popup -->
+		<section class="overlay">
+			<div class="flex-cont">
+				<a class="remove-link" href="produkt.html">
+					<img src="bilder/ikoner/charm_circle-cross.png" class="remove">
+				</a>
+				<p>Pilo 2 Charcoal</p>
+				<p>650 kr</p>
+				<img class="fabric-item" src="/bilder/Produkt/nopp1.png" alt="fabric_shaver">
+
+				<button class="add-item">Lägg till</button>
+				<p>Den ideala balansen mellan funktion
+					och estetik. Pilo 2 Fabric Shaver är
+					skonsam men ändå effektiv, och tar
+					bort ludd och noppor från alla typer
+					av material. Med sina 6 rakblad och
+					ett större munstycke, är Pilo 2 Fabric
+					Shaver vår starkaste och mest
+					effektiva noppborttagare.</p>
+			</div>
+		</section>
 		<!-- Innehåll -->
 		<section class="inner-module">
-			<p>Tack för din beställning</p>
-			<a href="startsida.html"><button>Hem</button></a>
+			<picture class="produktblad">
+				<a class="overlay-img" href="overlay.html">
+					<img class="produkt-img" src="/bilder/Produkt/pilo_no2_charcoal_number.png">
+				</a>
+				<img class="produkt-img" src="/bilder/Produkt/pilo_no2_sand_number.png">
+				<img class="produkt-img" src="/bilder/Produkt/pilo_no1_blue_number.png">
+				<img class="produkt-img" src="/bilder/Produkt/pilo_no1_pink_number.png">
+				<img class="produkt-img" src="/bilder/Produkt/pilo_no1_grey_number.png">
+				<img class="produkt-img" src="/bilder/Produkt/pilo_no1_black_number.png">
+			</picture>
+
+
+
+
+
+
+
 		</section>
 		<!-- Sidebar -->
 		<aside></aside>
@@ -67,17 +103,10 @@
 			<li class=" bold">Telefon</li>
 			<li>076-483 33 56</li>
 		</ul>
-		</ul>
 		<ul>
-			<li class=" bold"><a
-					href="https://www.google.com/maps/place/Smista+allé+42,+141+74+Segeltorp/@59.2860609,17.8672513,11.9z/data=!4m5!3m4!1s0x465f76924e1449c9:0x7e2beb155ef90a45!8m2!3d59.2833455!4d17.9357717">Adress</a>
-			</li>
-			<li><a
-					href="https://www.google.com/maps/place/Smista+allé+42,+141+74+Segeltorp/@59.2860609,17.8672513,11.9z/data=!4m5!3m4!1s0x465f76924e1449c9:0x7e2beb155ef90a45!8m2!3d59.2833455!4d17.9357717">Smista
-					allé 42</a></li>
-			<li><a
-					href="https://www.google.com/maps/place/Smista+allé+42,+141+74+Segeltorp/@59.2860609,17.8672513,11.9z/data=!4m5!3m4!1s0x465f76924e1449c9:0x7e2beb155ef90a45!8m2!3d59.2833455!4d17.9357717">
-					Stockholm</a></li>
+			<li class=" bold">Adress</li>
+			<li>Smista allé 42</li>
+			<li> Stockholm</li>
 		</ul>
 		<ul>
 			<li class=" bold">Mail</li>

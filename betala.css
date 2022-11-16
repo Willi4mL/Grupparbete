@@ -220,22 +220,13 @@ input[type="email"]:focus {
 	font-size: 0.8rem;
 }
 
-#payment-cont p:nth-of-type(1) {
-	padding-bottom: 1em;
-}
-
-#payment-cont p:nth-of-type(2) {
-	padding-bottom: 1em;
-}
-
+#payment-cont p:nth-of-type(1),
+#payment-cont p:nth-of-type(2),
 #payment-cont p:nth-of-type(3) {
 	padding-bottom: 1em;
 }
 
 .pay-btn {
-	/* background-color: black;
-	color: white;
-	padding: 0.6em 6em; */
 	margin-top: 5em;
 }
 
@@ -254,4 +245,25 @@ hr {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.klarna {
+	width: 50px;
+	height: 25px;
+}
+
+.swish {
+	width: 69px;
+	height: 32px;
+}
+
+.pay-card {
+	width: 57px;
+	height: 44px;
+}
+
+.leverans {
+	width: 50px;
+	height: 25px;
+
 }
