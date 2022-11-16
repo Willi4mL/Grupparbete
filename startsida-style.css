@@ -30,13 +30,11 @@ main > .inner-module > .pic-container{
 	top:-2em;
 	display: flex;
 	margin-bottom:2em;
-	border:2px dotted red;
 }
 
 main > .inner-module > .pic-container > img{
 	height: 30em;
 	width: 100%;
-	/* object-fit:contain; */
 }	
 
 main > .inner-module > .text{
