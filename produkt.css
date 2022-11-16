@@ -1,40 +1,46 @@
-.produktblad{
+.produktblad {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto;
 }
 
-.produktblad > img{
-	border:1px solid #bbbbbb;
-	/* background-color: #E8E7E7; */
+.overlay-img {
+	width: 100%;
+	position: relative;
+	height: 5px;
+}
+
+
+.produkt-img {
+	border: 1px solid #bbbbbb;
 	width: 100%;
 	position: relative;
 }
 
 
-@media screen and (min-width: 768px){
-	.produktblad{
-		
+@media screen and (min-width: 768px) {
+	.produktblad {
+
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: auto;
 	}
 }
 
-.box{
+.box {
 	display: none;
 }
 
-.overlay{
+.overlay {
 	background-color: #dd4242;
-    width: 8em;
-    height: 10em;
+	width: 8em;
+	height: 10em;
 }
 
-.infobox{
+.infobox {
 	position: absolute;
 }
 
 input:checked~.infobox {
-    display: block;
-    box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
+	display: block;
+	box-shadow: 5px 4px 5px rgba(000, 000, 000, 0.5);
 }
