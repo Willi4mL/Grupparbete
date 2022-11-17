@@ -10,6 +10,12 @@
 	height: 5px;
 }
 
+picture img:hover{
+	cursor: pointer;
+	scale: 1.015;
+	filter:brightness(1.015);
+}
+
 
 .produkt-img {
 	border: 1px solid #bbbbbb;

@@ -10,7 +10,6 @@
 	text-decoration: underline;
 }
 
-
 /* Orderöversikt/card */
 
 #order-cont {
@@ -41,6 +40,10 @@
 	align-self: center;
 	justify-self: end;
 	padding-right: 1.5em;
+}
+
+.remove-item:hover, label:hover, select:hover{
+	cursor: pointer;
 }
 
 .card-cont p:nth-of-type(1) {
