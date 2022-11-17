@@ -162,7 +162,6 @@ footer {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	padding-inline-start: 0;
-	align-items: center;
 	min-height: 5em;
 	position: relative;
 	bottom: 0;
@@ -196,10 +195,6 @@ footer>ul>li>a>img {
 
 .medlem, .kundservice:hover{
 	cursor: pointer;
-}
-
-.medlem, .kundservice:focus{
-	
 }
 
 /*DropdownMeny*/
