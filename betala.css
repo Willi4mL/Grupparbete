@@ -10,6 +10,7 @@
 	text-decoration: underline;
 }
 
+
 /* Orderöversikt/card */
 
 #order-cont {
@@ -42,7 +43,9 @@
 	padding-right: 1.5em;
 }
 
-.remove-item:hover, label:hover, select:hover{
+.remove-item:hover,
+.label-hover:hover,
+select:hover {
 	cursor: pointer;
 }
 
@@ -261,8 +264,8 @@ hr {
 }
 
 .pay-card {
-	width: 50px;
-	height: 37px;
+	width: 57px;
+	height: 44px;
 }
 
 .leverans {
