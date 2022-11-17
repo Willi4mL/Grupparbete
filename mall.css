@@ -190,12 +190,16 @@ footer>ul>li>a>img {
 	padding: 0;
 }
 
-.medlem {
+.medlem, .kundservice {
 	padding-top: 0.5em;
 }
 
-.kundservice {
-	padding-bottom: 0.5em;
+.medlem, .kundservice:hover{
+	cursor: pointer;
+}
+
+.medlem, .kundservice:focus{
+	
 }
 
 /*DropdownMeny*/

@@ -1,3 +1,7 @@
 p {
 	padding: 1em;
 }
+
+button:hover{
+	cursor: pointer;
+}

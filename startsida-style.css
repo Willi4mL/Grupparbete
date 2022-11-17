@@ -27,7 +27,6 @@ main > .inner-module > .pic-container{
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	top:-2em;
 	display: flex;
 	margin-bottom:2em;
 }
