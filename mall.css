@@ -101,10 +101,19 @@ main .inner-module {
 }
 
 button {
-	padding: 0.6em 6em;
 	text-align: center;
-	background-color: #000000;
+	padding: 0.6em 6em;
 	color: #ffffff;
+	background-color: black;
+	transition: 0.3s;
+	border: none;
+}
+
+button:hover {
+	background-color: #dedede;
+	color: #000000;
+	cursor: pointer;
+	border: none;
 }
 
 /* Kundkorgen i header */
@@ -189,11 +198,13 @@ footer>ul>li>a>img {
 	padding: 0;
 }
 
-.medlem, .kundservice {
+.medlem,
+.kundservice {
 	padding-top: 0.5em;
 }
 
-.medlem, .kundservice:hover{
+.medlem,
+.kundservice:hover {
 	cursor: pointer;
 }
 
