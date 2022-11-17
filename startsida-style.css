@@ -21,7 +21,12 @@ article.text .rubrik-bold{
 	height: 100%;
 }
 
+main > .inner-module > .text{
+	display: block;
+	flex-wrap: wrap;
+}
 
+/* Bilder som ändras */
 main > .inner-module > .pic-container{
 	display: none;
 	margin-left: auto;
@@ -30,35 +35,16 @@ main > .inner-module > .pic-container{
 	top:-2em;
 	display: flex;
 	margin-bottom:2em;
-}
-
-main > .inner-module > .pic-container > img{
-	height: 30em;
-	width: 100%;
-}	
-
-main > .inner-module > .text{
-	display: block;
-	flex-wrap: wrap;
-}
-
-/* Bilder som ändras */
-  .pic-container {
-	margin-left: auto;
-	margin-right: auto;
-	display: none;
-	position: relative;
-	display: flex;
-	margin-bottom:2em;
 	height:30em;
 	width: 100%;
-  }
+}
   
 .pic-container > img {
 	position: absolute;
 	opacity: 0;
 	object-fit: cover !important;
 	height: 100% !important;
+	width: 100%;
 	animation: display 32s infinite;
   }
   
@@ -75,7 +61,7 @@ main > .inner-module > .text{
 	animation-delay: 32s;
   }
 
-/*Flyter in och ut*/
+/*Bildernas synlighet*/
 	@keyframes display {
 	0% {
 		opacity: 0;
