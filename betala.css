@@ -273,3 +273,10 @@ hr {
 	height: 25px;
 
 }
+
+@media (min-width: 320px) and (max-width: 428px) {
+	.label-hover {
+		font-size: 14px;
+	}
+
+}

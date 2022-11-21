@@ -101,3 +101,21 @@ footer {
 		width: 30vw;
 	}
 }
+
+@media (min-width: 320px) and (max-width: 470px) {
+	p {
+		font-size: 10px;
+	}
+
+	.flex-cont p:nth-of-type(1) {
+		margin-top: 1em;
+	}
+
+	.flex-cont p:nth-of-type(2) {
+		margin-top: 1.5em;
+	}
+
+	.add-item {
+		width: fit-content;
+	}
+}
