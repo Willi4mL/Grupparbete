@@ -274,9 +274,83 @@ hr {
 
 }
 
+.inner-module {
+	overflow: hidden;
+}
+
 @media (min-width: 320px) and (max-width: 428px) {
 	.label-hover {
 		font-size: 14px;
 	}
 
+	#payment-cont>p {
+		font-size: 10px;
+	}
+
+	.pay-card {
+		width: 2em;
+		height: 2em;
+	}
+
+	.klarna {
+		width: 2.5em;
+		height: 1.5em;
+	}
+
+	.swish {
+		width: 3em;
+		height: 2em;
+	}
+
+	#info-cont input {
+		font-size: 11px;
+
+	}
+
+	#leverans-cont label {
+		font-size: 10px;
+	}
+
+	.leverans {
+		width: 2em;
+		height: 1.5em;
+	}
+
+	#leverans-cont>p {
+		font-size: 8px;
+	}
+
+
+	.card-cont>p {
+		font-size: 12px;
+
+	}
+
+	.card-cont {
+		height: 10em;
+	}
+
+	#antal {
+		height: 1.5em;
+		width: 4em;
+	}
+
+	h2 {
+		font-size: 1.3em;
+	}
+
+	#order-cont {
+		width: 70vw;
+	}
+
+	.remove-item {
+		align-self: flex-start;
+		padding-right: 1.1em;
+	}
+
+	.summa {
+		grid-row: 1;
+		grid-column: 3;
+		align-self: flex-end;
+	}
 }
