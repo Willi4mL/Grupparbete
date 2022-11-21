@@ -38,7 +38,7 @@ header nav ul {
 
 .header-section {
 	display: flex;
-	justify-content: space-between;
+	justify-content:space-between;
 	align-items: center;
 }
 
@@ -52,7 +52,7 @@ li>a {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #000000;
 }
 
 a:hover {
@@ -104,7 +104,7 @@ button {
 	text-align: center;
 	padding: 0.6em 6em;
 	color: #ffffff;
-	background-color: black;
+	background-color: #000000;
 	transition: 0.3s;
 	border: none;
 }
@@ -129,10 +129,27 @@ button:hover {
 
 /* Företags namn & logga i header */
 .logo {
-	display: inline;
-	width: 20em;
-	height: 5em;
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+.logosmall {
+	width: 70px;
+	height: 70px;
 	align-self: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.linklogo2 {
+	width: 70px;
+	height: 70px;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 aside {
@@ -162,6 +179,39 @@ aside {
 
 	input:checked~.meny {
 		visibility: hidden;
+	}
+	.logosmall {
+		display: none;
+	}
+
+	.logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.linklogo2{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 428px) {
+	.logo {
+		display: block;
+		width: 20em;
+		height: 5em;
+		align-self: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.linklogo{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.logosmall{
+		display: none;
+	}
+	.linklogo2{
+		display: none;
 	}
 }
 
